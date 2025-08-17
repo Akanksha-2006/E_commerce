@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Awesome Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>E-Commerce</title>
+  </head>
+
+  <body id="top">
+        <!-- ==============header menu==============-->
+    <section class="header_menu" id="header_menu"></section>
+        <div class="container-fluid px-0 shadow"></div>
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+                    <img src="images/logo.png" class="img img-fluid logo-small" alt="logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div class="search mr-3">
+                        <a href = "search.html" class="custom-search-btn">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================= checkout ===================-->
+    <section class="Checkout py-5 my-5" id="Checkout">
+        <div class="container">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Checkout</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card billing-details">
+                        <div class="card-body">
+                            <h5 class="mb-5">Billing details</h5>
+                            <form id="checkoutForm">
+                                <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-0 mb-lg-4">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" id="firstName" class="form-control mb-0 mb-lg-2">
+                                        <small class="text-danger d-none" id="error-firstName">This field is required</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group md-outline">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" id="lastName" class="form-control mb-0 mb-lg-2">
+                                        <small class="text-danger d-none" id="error-lastName">This field is required</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- phone -->
+                            <div class="form-group">
+                                <label for="form18">Phone</label>
+                                <input type="tel" id="form18" class="form-control">
+                                <small class="text-danger d-none" id="error-form18">This field is required</small>
+                            </div>    
+                            <!-- email -->    
+                            <div class="form-group">
+                                <label for="form19">Email Address</label>
+                                <input type="email" id="form19" class="form-control">
+                                <small class="text-danger d-none" id="error-form19">This field is required</small>
+                            </div>
+                            <!-- country -->
+                            <div class="d-flex flex-wrap">
+                                <div class="w-100">
+                                    <label>Country</label>
+                                    <select id="country" class="form-control">
+                                        <option value="" selected>Choose your country</option>
+                                        <option value="India">India</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                    <small class="text-danger d-none" id="error-country">This field is required</small>
+                                </div>
+                            </div>
+                            <!-- Address part 1 -->
+                            <div class="form-group">
+                                <label for="form14">Address line 1</label>
+                                <input type="text" id="form14" placeholder="House number and street name" class="form-control">
+                                <small class="text-danger d-none" id="error-form14">This field is required</small>
+                            </div>
+                            <!-- Address part 2 -->
+                            <div class="form-group">
+                                <label for="form15">Address line 2</label>
+                                <input type="text" id="form15" placeholder="Apartment, suite, unit etc. (optional)" class="form-control">
+                                <small class="text-danger d-none" id="error-form15">This field is required</small>
+                            </div>
+                            <!-- Postcode/ZIP -->
+                            <div class="form-group">
+                                <label for="form16">Postcode / ZIP</label>
+                                <input type="text" id="form16" class="form-control">
+                                <small class="text-danger d-none" id="error-form16">This field is required</small>
+                            </div>
+                            <!-- Town/City -->
+                            <div class="form-group">
+                                <label for="form17">Town / City</label>
+                                <input type="text" id="form17" class="form-control">
+                                <small class="text-danger d-none" id="error-form17">This field is required</small>
+                            </div>
+                            <!-- Additional info -->
+                            <div class="form-group">
+                                <label for="form76">Additional Information</label>
+                                <textarea id="form76" class="md-textarea form-control" rows="4"></textarea>
+                                <small class="text-danger d-none" id="error-form76">This field is required</small>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-check mr-2"></i>Purchase
+                                </button>
+                            </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- order summary -->
+                <div class="col-lg-4 bg_checkout_1 h-25 rounded">
+                    <div class="mb-3">
+                        <div class="pt-4">
+                            <h5 class="mb-3">Order summary</h5>
+                            <ul class="list-group list-group-flush" id="checkout-summary">
+                                <li class="list-group-item border-top px-0 pt-3">
+                                    <div class="input-group">
+                                        <input type="text" id="couponCode" class="form-control" placeholder="Enter coupon code">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" type="button" onclick="applyCoupon()">Apply</button>
+                                        </div>
+                                    </div>
+                                    <small id="couponMessage" class="form-text mt-2"></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Footer ==================-->
+    <section class="footer_section pt-5 pb-2" id="footer_section">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6 footer-about">
+                        <div class="footer_title">
+                            <a href="index.html"><img src="images/logo.png" width="100px" class="img img-fluid footer-logo" alt="logo"></a>
+                        </div>
+                        <p>At Stylique, we believe style is an expresssion, not a standard. Every collection is designed to empower you to be unapologetically you.</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="javascript:;">Offers & Discounts</a></li>
+                                <li><a href="javascript:;">Get Coupon</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>New Products</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Women Cloth</a></li>
+                                <li><a href="javascript:;">Fashion Accessories</a></li>
+                                <li><a href="javascript:;">Men Accessories</a></li>
+                                <li><a href="javascript:;">Rubber made toys</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                <li><a href="javascript:;">Terms & Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top">
+                <h6 class="text-center mt-3">Copyright @2025 All rights reserved</h6>
+            </div>
+        </footer>
+    </section>
+    <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-primary" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+<script>
+    const products = [
+        {
+        id: 'hoodie01',
+        name: 'Hoodies',
+        price: 2000,
+        image: 'images/hoodies.png'
+        },
+        {
+        id: 'shirt01',
+        name: 'Shirts',
+        price: 850,
+        image: 'images/shirts.png'
+        },
+        {
+        id: 'coat01',
+        name: 'Blazers',
+        price: 5000,
+        image: 'images/coats.png'
+        },
+        {
+        id: 'skin01',
+        name: 'Skincare products',
+        price: 3000,
+        image: 'images/skincare.png'
+        },
+        {
+        id: 'watch01',
+        name: 'Watches',
+        price: 1000,
+        image: 'images/watch.png'
+        },
+        {
+        id: 'shoe01',
+        name: 'Shoes',
+        price: 4500,
+        image: 'images/shoes.png'
+        },
+        {
+        id: 'hoodie02',
+        name: 'Blue Hoodie',
+            price: 2000,
+        image: 'images/blue_hoodie.png'
+        }
+    ];
+
+    // ⬇️ This must be outside loadCart
+    function updateQuantity(productId, change) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const index = cart.findIndex(item => item.id === productId);
+        if (index !== -1) {
+        cart[index].quantity += change;
+        if (cart[index].quantity <= 0) {
+            cart.splice(index, 1);
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart(); // re-render cart
+        }
+    }
+
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartContainer = document.querySelector('#cart .row.bg_cart_1');
+        const summaryList = document.querySelector('#order-summary');
+
+        let total = 0;
+        let html = '';
+        let summaryHTML = '';
+
+        if (cart.length === 0) {
+        cartContainer.innerHTML = '<h4 class="text-center w-100 py-5">Your cart is empty.</h4>';
+        summaryList.innerHTML = '';
+        return;
+        }
+
+        cart.forEach(item => {
+        const product = products.find(p => p.id === item.id);
+        if (product) {
+            const itemTotal = product.price * item.quantity;
+            total += itemTotal;
+
+            html += `
+    <div class="card mb-4 p-3 shadow-sm rounded">
+        <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <img src="${product.image}" class="img-fluid rounded" alt="${product.name}">
+        </div>
+        <div class="col-md-6">
+            <h5 class="mb-1">${product.name}</h5>
+                <p class="text-muted small mb-1">Price: ₹${product.price}</p>
+                <div class="d-flex align-items-center">
+                <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.id}', -1)">−</button>
+                <span class="mx-2">${item.quantity}</span>
+                <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity('${item.id}', 1)">+</button>
+                </div>
+            </div>
+            <div class="col-md-3 text-right">
+                <p class="mb-1 font-weight-bold">₹${itemTotal}</p>
+                <button class="btn btn-sm btn-danger mt-2" onclick="updateQuantity('${item.id}', -${item.quantity})">
+                <i class="fas fa-trash-alt mr-1"></i> Remove
+                </button>
+            </div>
+            </div>
+        </div>
+        `;
+
+            summaryHTML += `
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                <span>${product.name}</span>
+                <span>x${item.quantity}</span>
+                <span>₹${itemTotal}</span>
+            </li>
+            `;
+        }
+        });
+
+        console.log("Summary HTML:", summaryHTML);
+
+        cartContainer.innerHTML = html;
+        summaryList.innerHTML = summaryHTML + `
+        <li class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
+            <div>
+            <strong>Total amount</strong>
+            <p class="mb-0 text-muted">(including VAT)</p>
+            </div>
+            <span><strong>₹${total}</strong></span>
+        </li>
+        `;
+    }
+
+    window.addEventListener('DOMContentLoaded', loadCart);
+
+    let appliedDiscount = 0;
+    let discountName = '';
+
+    function applyCoupon() {
+      const code = document.getElementById('couponCode').value.trim().toUpperCase();
+      const msg = document.getElementById('couponMessage');
+      
+      const validCoupons = {
+        "SAVE10": 10,    // 10% off
+        "SAVE20": 20,    // 20% off
+        "FREESHIP": 5    // ₹5 off (you can change logic later)
+      };
+
+      if (validCoupons.hasOwnProperty(code)) {
+        appliedDiscount = validCoupons[code];
+        discountName = code;
+        msg.innerText = `Coupon "${code}" applied - ${appliedDiscount}${code.startsWith('SAVE') ? '% off' : '₹ off'}`;
+        msg.classList.remove("text-danger");
+        msg.classList.add("text-success");
+      } else {
+        appliedDiscount = 0;
+        discountName = '';
+        msg.innerText = "Invalid or expired coupon.";
+        msg.classList.remove("text-success");
+        msg.classList.add("text-danger");
+      }
+
+      loadCheckoutSummary(); // Refresh summary with discount
+    }
+
+    function loadCheckoutSummary() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const summaryList = document.getElementById('checkout-summary');
+      summaryList.innerHTML = '';
+
+      if (cart.length === 0) {
+        summaryList.innerHTML = `
+          <li class="list-group-item text-center border-0 px-0 pb-2 text-muted">
+            Your cart is empty.
+          </li>`;
+        return;
+      }
+
+      let total = 0;
+
+      cart.forEach(item => {
+        const product = products.find(p => p.id === item.id);
+        if (product) {
+          const itemTotal = product.price * item.quantity;
+          total += itemTotal;
+
+          summaryList.innerHTML += `
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 pb-2">
+              <div>
+                <span class="font-weight-bold">${product.name}</span>
+                <div class="text-muted small">Qty: ${item.quantity}</div>
+              </div>
+              <span class="text-dark font-weight-semibold">₹${itemTotal}</span>
+            </li>`;
+        }
+      });
+
+      // Coupon Input
+      summaryList.innerHTML += `
+        <li class="list-group-item border-top px-0 pt-3">
+          <div class="input-group">
+            <input type="text" id="couponCode" class="form-control" placeholder="Enter coupon code" value="${discountName}">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button" onclick="applyCoupon()">Apply</button>
+            </div>
+          </div>
+          <small id="couponMessage" class="form-text mt-2 ${discountName ? 'text-success' : ''}">
+            ${discountName ? `Coupon "${discountName}" applied - ${appliedDiscount}${discountName.startsWith('SAVE') ? '% off' : '₹ off'}` : ''}
+          </small>
+        </li>`;
+
+      let finalAmount = total;
+      if (discountName.startsWith("SAVE")) {
+        finalAmount -= (total * appliedDiscount) / 100;
+      } else if (discountName === "FREESHIP") {
+        finalAmount -= appliedDiscount;
+      }
+
+      summaryList.innerHTML += `
+        <li class="list-group-item d-flex justify-content-between align-items-center border-top px-0 pt-3">
+          <div>
+            <strong>Total Amount</strong>
+            <p class="mb-0 text-muted small">(including VAT)</p>
+          </div>
+          <span class="h5 mb-0 text-success font-weight-bold">₹${finalAmount.toFixed(2)}</span>
+        </li>`;
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCheckoutSummary);
+
+    const phoneRules = {
+        "India": {
+            pattern: /^[6-9]\d{9}$/,
+            message: "Please enter a valid 10-digit Indian phone number (e.g., 9876543210)."
+        },
+        "United States": {
+            pattern: /^\d{10}$/,
+            message: "Please enter a valid 10-digit US phone number (e.g., 5551234567)."
+        },
+        "United Kingdom": {
+            pattern: /^\d{10,11}$/,
+            message: "Please enter a valid UK phone number (10-11 digits, including leading 0)."
+        },
+        "Canada": {
+            pattern: /^\d{10}$/,
+            message: "Please enter a valid 10-digit Canadian phone number (e.g., 5551234567)."
+        },
+        "Australia": {
+            pattern: /^\d{10}$/,
+            message: "Please enter a valid Australian mobile number (e.g., 0412345678)."
+        }
+    };
+    
+    const zipCodeRules = {
+        "India": {
+            pattern: /^\d{6}$/,
+            message: "Please enter a valid 6-digit Indian PIN code."
+        },
+        "United States": {
+            pattern: /^\d{5}(?:-\d{4})?$/,
+            message: "Please enter a valid US ZIP code (e.g., 12345 or 12345-6789)."
+        },
+        "United Kingdom": {
+            pattern: /^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/i,
+            message: "Please enter a valid UK postcode (e.g., SW1A 0AA)."
+        },
+        "Canada": {
+            pattern: /^[A-Z]\d[A-Z]\s*\d[A-Z]\d$/i,
+            message: "Please enter a valid Canadian postal code (e.g., A1B 2C3)."
+        },
+        "Australia": {
+            pattern: /^\d{4}$/,
+            message: "Please enter a valid 4-digit Australian postcode."
+        }
+    };
+
+    const countrySelect = document.getElementById("country");
+    const phoneInput = document.getElementById("form18");
+    const phoneError = document.getElementById("error-form18");
+    const zipInput = document.getElementById("form16");
+    const zipError = document.getElementById("error-form16");
+    
+    countrySelect.addEventListener("change", function () {
+        const country = this.value;
+        const phoneRule = phoneRules[country];
+        const zipRule = zipCodeRules[country];
+        
+        if (phoneRule) {
+            phoneError.innerText = phoneRule.message;
+        }
+        if (zipRule) {
+            zipError.innerText = zipRule.message;
+        }
+    });
+
+    phoneInput.addEventListener("input", function() {
+        const country = countrySelect.value;
+        const phone = this.value.trim();
+        const cleanedPhone = phone.replace(/\D/g, ''); 
+        const phoneRule = phoneRules[country];
+        
+        if (phoneRule && phoneRule.pattern.test(cleanedPhone)) {
+            phoneError.classList.add("d-none");
+        } else if (phone.length === 0) {
+            phoneError.classList.add("d-none");
+        } else {
+            phoneError.classList.remove("d-none");
+        }
+    });
+
+    zipInput.addEventListener("input", function() {
+        const country = countrySelect.value;
+        const zip = this.value.trim();
+        const zipRule = zipCodeRules[country];
+
+        if (zipRule && zipRule.pattern.test(zip)) {
+            zipError.classList.add("d-none");
+        } else if (zip.length === 0) {
+            zipError.classList.add("d-none");
+        } else {
+            zipError.classList.remove("d-none");
+        }
+    });
+
+    document.getElementById("checkoutForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+      const country = countrySelect.value;
+      const phone = phoneInput.value.trim();
+      const zip = zipInput.value.trim();
+      const phoneRule = phoneRules[country];
+      const zipRule = zipCodeRules[country];
+
+      // Reset all custom error messages
+      const allErrors = document.querySelectorAll(".text-danger");
+      allErrors.forEach(error => error.classList.add("d-none"));
+      
+      const emailInput = document.getElementById("form19");
+      const emailError = document.getElementById("error-form19");
+      
+      // Validation for all fields with generic "required" message
+      const requiredFields = [
+        "firstName",
+        "lastName",
+        "form18", // Phone
+        "form14", // Address
+        "form16", // Zip
+        "form17", // City
+        "form19", // Email
+        "country"
+      ];
+      
+      requiredFields.forEach(id => {
+          const input = document.getElementById(id);
+          const error = document.getElementById("error-" + id);
+          if (input.value.trim() === "" || (input.tagName === "SELECT" && input.value === "")) {
+              error.innerText = "This field is required";
+              error.classList.remove("d-none");
+              isValid = false;
+          }
+      });
+      
+      // Specific validation logic for Phone, Zip, and Email
+      if (isValid) {
+          // Phone number validation logic
+          const cleanedPhone = phone.replace(/\D/g, '');
+          if (phoneRule && !phoneRule.pattern.test(cleanedPhone)) {
+              phoneError.innerText = phoneRule.message;
+              phoneError.classList.remove("d-none");
+              isValid = false;
+          }
+
+          // Zip code validation logic
+          if (zipRule && !zipRule.pattern.test(zip)) {
+              zipError.innerText = zipRule.message;
+              zipError.classList.remove("d-none");
+              isValid = false;
+          }
+
+          // Email validation logic
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(emailInput.value.trim())) {
+              emailError.innerText = "Please enter a valid email address.";
+              emailError.classList.remove("d-none");
+              isValid = false;
+          }
+      }
+
+      if (isValid) {
+        // Hide all errors a final time before redirecting
+        allErrors.forEach(error => error.classList.add("d-none"));
+        
+        // Save the email to local storage before redirecting
+        const userEmail = document.getElementById("form19").value;
+        localStorage.setItem("userEmail", userEmail);
+        window.location.href = "order_confirmation.html";
+      }
+    });
+
+</script>
+
+  </body>
+</html>

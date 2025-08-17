@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>E-Commerce</title>
+  </head>
+
+  <body id="top">
+    <!-- ==============header menu==============-->
+    <section class="header_menu" id="header_menu"></section>
+        <div class="container-fluid px-0 shadow"></div>
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+                    <img src="images/logo.png" class="img img-fluid logo-small" alt="logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div class="search mr-3">
+                        <a href = "search.html" class="custom-search-btn">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== Search ===================-->
+    <section class="search_section py-5 my-5" id="search_section">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <h2><i class="far fa-file mr-2"></i>Search</h2>
+            </div>
+            <div class="row">
+                <!-- Begin result -->
+                <div class="col-md-10 mx-auto">
+                    <!-- Begin search input -->
+                    <div class="input-group rounded-pill overflow-hidden border">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white border-right-0">
+                                <i class="fa fa-search text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="searchInput" class="form-control border-left-0" placeholder="Search products..">
+                    </div>
+                    <small id="searchFeedback" class="text-muted ml-1"></small>
+                    <!-- Behin table result -->
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover">
+                            <tbody class="border-bottom">
+                                <tr data-name="Hoodies" class="product-row">
+                                    <td class="product-index">1</td>
+                                    <td class="image"><img src="images/hoodies.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Hoodies</strong><br>Cozy, stylish hoodies designed for all-day comfort and effortless streetwear appeal.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹5000</td>
+                                </tr>
+                                <tr data-name="Shoes" class="product-row">
+                                    <td class="product-index">2</td>
+                                    <td class="image"><img src="images/shoes.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Shoes</strong><br>Comfortable, durable shoes crafted for everyday wear and modern style.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹4500</td>
+                                </tr>
+                                <tr data-name="Desserts" class="product-row">
+                                    <td class="product-index">3</td>
+                                    <td class="image"><img src="images/cakes.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Desserts</strong><br>Deliciously crafted desserts to sweeten every moment with indulgent flavor.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹350</td>
+                                </tr>
+                                <tr data-name="Watches" class="product-row">
+                                    <td class="product-index">4</td>
+                                    <td class="image"><img src="images/watch.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Watches</strong><br>Timeless watches that blend elegance, precision, and everyday sophistication.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"></span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹1000</td>
+                                </tr>
+                                <tr data-name="Shirts" class="product-row">
+                                    <td class="product-index">5</td>
+                                    <td class="image"><img src="images/shirts.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Shirts</strong><br>Classic and comfortable shirts designed for effortless everyday style.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹850</td>
+                                </tr>
+                                <tr data-name="Blazers" class="product-row">
+                                    <td class="product-indexr">6</td>
+                                    <td class="image"><img src="images/coats.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Blazers</strong><br>Sharp, structured blazers that elevate your look with timeless sophistication.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹2000</td>
+                                </tr>
+                                <tr data-name="Camera" class="product-row">
+                                    <td class="product-index">7</td>
+                                    <td class="image"><img src="images/about.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Camera</strong><br>Capture life’s best moments with high-definition clarity and stunning precision.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹2000</td>
+                                </tr>
+                                <tr data-name="Handbag" class="product-row">
+                                    <td class="product-index">8</td>
+                                    <td class="image"><img src="images/bag.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Handbag</strong><br>Elevate your style with a chic handbag that blends elegance, space, and everyday ease.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹1000</td>
+                                </tr>
+                                <tr data-name="Laptop" class="product-row">
+                                    <td class="product-index">9</td>
+                                    <td class="image"><img src="images/laptop.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Laptop</strong><br>Power through work and play with a sleek, high-performance laptop built for modern multitasking.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹50,000</td>
+                                </tr>
+                                <tr data-name="Book" class="product-row">
+                                    <td class="product-index">10</td>
+                                    <td class="image"><img src="images/books.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Book</strong><br>Discover new worlds and ideas with captivating books that inspire, inform, and entertain.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹350</td>
+                                </tr>
+                                <tr data-name="Jewellery" class="product-row">
+                                    <td class="product-index">11</td>
+                                    <td class="image"><img src="images/jewellery.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Jewellery</strong><br>Add a touch of elegance with timeless jewellery pieces that shine with every moment.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹1500</td>
+                                </tr>
+                                <tr data-name="Headphome" class="product-row">
+                                    <td class="product-index">11</td>
+                                    <td class="image"><img src="images/headphone.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>headphone</strong><br>Experience immersive sound with stylish, high-performance headphones designed for comfort and clarity.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹1500</td>
+                                </tr>
+                                <tr data-name="Bracelet" class="product-row">
+                                    <td class="product-indexr">12</td>
+                                    <td class="image"><img src="images/category4.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Bracelet</strong><br>TElevate your style with a sleek, handcrafted bracelet that adds charm to every outfit.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹500</td>
+                                </tr>
+                                <tr data-name="Flowers" class="product-row">
+                                    <td class="product-index">13</td>
+                                    <td class="image"><img src="images/flowers.png" width="100px" class="img image" alt=""></td>
+                                    <td class="product"><strong>Flowers</strong><br>Brighten any moment with fresh, vibrant flowers that speak the language of love and joy.</td>
+                                    <td class="rate text-right"><span class="star-rating d-inline-block>"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span></td>
+                                    <td class="price text-right">₹200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Footer ==================-->
+    <section class="footer_section pt-5 pb-2" id="footer_section">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6 footer-about">
+                        <div class="footer_title">
+                            <a href="index.html"><img src="images/logo.png" width="100px" class="img img-fluid footer-logo" alt="logo"></a>
+                        </div>
+                        <p>At Stylique, we believe style is an expresssion, not a standard. Every collection is designed to empower you to be unapologetically you.</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="javascript:;">Offers & Discounts</a></li>
+                                <li><a href="javascript:;">Get Coupon</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>New Products</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Women Cloth</a></li>
+                                <li><a href="javascript:;">Fashion Accessories</a></li>
+                                <li><a href="javascript:;">Men Accessories</a></li>
+                                <li><a href="javascript:;">Rubber made toys</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                <li><a href="javascript:;">Terms & Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top">
+                <h6 class="text-center mt-3">Copyright @2025 All rights reserved</h6>
+            </div>
+        </footer>
+    </section>
+    <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-primary" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Hide all product rows and table on page load
+    document.querySelectorAll('.product-row').forEach(row => {
+      row.style.display = 'none';
+    });
+    const table = document.querySelector('.table-responsive');
+    if (table) table.style.display = 'none';
+
+    const feedback = document.getElementById('searchFeedback');
+    if (feedback) feedback.textContent = '';
+  });
+
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase().trim();
+    const productRows = document.querySelectorAll('.product-row');
+    const feedback = document.getElementById('searchFeedback');
+    const table = document.querySelector('.table-responsive');
+
+    let foundMatch = false;
+    let index = 1;
+
+    productRows.forEach(row => {
+      const productName = row.getAttribute('data-name').toLowerCase();
+      if (productName.includes(searchValue) && searchValue !== "") {
+        row.style.display = "";
+        row.querySelector('.product-index').textContent = index++;
+        foundMatch = true;
+      } else {
+        row.style.display = "none";
+      }
+    });
+
+    if (searchValue !== "") {
+      feedback.textContent = foundMatch
+        ? `Showing results matching "${searchValue}"`
+        : `No results found for "${searchValue}"`;
+    } else {
+      feedback.textContent = '';
+    }
+
+    table.style.display = foundMatch ? "block" : "none";
+  });
+</script>
+
+  </body>
+</html>

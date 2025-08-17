@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hoodie01",
+    "name": "Premium Cotton Hoodie",
+    "image": "images/hoodies.png",
+    "price": 2000,
+    "category": "Hoodies"
+  },
+  {
+    "id": "shirt01",
+    "name": "Formal Shirt",
+    "image": "images/shirts.png",
+    "price": 850,
+    "category": "Shirts"
+  },
+  {
+    "id": "coat01",
+    "name": "Classic Blazer",
+    "image": "images/coats.png",
+    "price": 5000,
+    "category": "Blazers"
+  }
+]
